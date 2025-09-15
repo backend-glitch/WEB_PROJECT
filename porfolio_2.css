@@ -1,0 +1,101 @@
+/* page 2 */
+
+img {
+  animation: glow 2s infinite alternate;
+/* animation : rotate_1 1s linear infinite;*/
+  border-radius: 50%;
+ align-items: CENTER;
+ flex: content;
+ justify-content: CENTER;
+
+}
+/*
+@keyframes rotate_1{
+
+
+ 0% {transform : rotate(0deg);}
+ 100%{transform : rotate(100deg);}
+
+}
+ */
+
+img:hover{
+  transform : scale(1.3);
+
+}
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px #ff7e5f, 0 0 40px #feb47b;
+  }
+  to {
+    box-shadow: 0 0 40px #ff7e5f, 0 0 80px #feb47b;
+  }
+}
+A{
+    COLOR: WHITE;
+    text-decoration: GREY DOTTED UNDERLINE;
+}
+
+button{
+   color : white;
+  ANIMATION : glow_1 3s infinite alternate;
+    background : linear-gradient(160deg ,lightblue,lightgreen,orange ); 
+    font-weight : bolder;
+    font-family : cursive;
+    text-shadow: black;
+    padding : 10px;
+    font-size: 25px;
+    border-radius: 50px;
+
+    transition: 0.3s;
+    box-shadow: 0.3s;
+}
+
+button:hover{
+
+transform: translateX(30PX);
+box-shadow: 0 0 20px red;
+}
+
+@keyframes glow_1 {
+  from {
+    box-shadow: 0 0 20px green, 0 0 40px blue;
+  }
+  to {
+    box-shadow: 0 0 40px pink, 0 0 80px yellow;
+  }
+}
+
+#TEXT_1{
+COLOR : YELLOW;
+FONT-FAMILY: CURSIVE;
+FONT-WEIGHT : NORMAL;
+text-decoration: greenyellow WAVY UNDERLINE;
+TEXT-ALIGN : LEFT;
+}
+
+#TEXT_1:HOVER{
+  TRANSFORM : translateX(30px);
+
+}
+
+H3{
+  font-weight : bold;
+  FONT-SIZE: 100PX;
+
+  background-image:url("https://th.bing.com/th/id/OIP.9VpD9ljaiHRe4mjKl99lQQHaE7?w=243&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3");
+   background-size: cover;
+background-position: center;
+padding: 40px;
+
+  -webkit-background-clip:TEXT;
+  background-clip: text;
+  COLOR : TRANSPARENT;
+
+  animation: bounce 6s infinite alternate ease;
+}
+
+@keyframes bounce{
+  0% {transform :translate(1000px);}
+  100%{transform: translate(-1000);}
+}
