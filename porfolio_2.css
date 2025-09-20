@@ -1,7 +1,11 @@
 /* page 2 */
 
  body {
-      background: LINEAR-GRADIENT(150DEG,BLACK,GREY,LIGHTGREY,BLACK); /* black background for glow effect */
+      background: radial-GRADIENT(circle at center,BLACK,GREY,LIGHTGREY,BLACK); /* black background for glow effect */
+
+      background-size: 400% 400%;
+
+      animation: move 5s ease infinite;
      /*  display: flex;  MC */
       
     /*  align-items: center;*/
@@ -9,6 +13,12 @@
       height: 250vh;
     }
   
+    @keyframes move {
+      
+      0%{background-position: 50% 0%;}
+      50%{background-position: 100% 50%;}
+      100%{background-position: 50% 0%;}
+    }
 .sliding_card{
  
     width:200px;

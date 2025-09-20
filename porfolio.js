@@ -8,7 +8,7 @@ function showEmoji(e) {
   // Create emoji
   const emoji = document.createElement("span");
   emoji.classList.add("emoji");
-  emoji.innerText = "😃";
+  emoji.innerText = "❤️";
 
   // Position emoji at the center of button
   emoji.style.position = "fixed";
@@ -23,3 +23,15 @@ function showEmoji(e) {
     emoji.remove();
   }, 1000);
 }
+
+// Select the button
+const buttonElement = document.querySelector('.js-subscribe-button');
+
+// Add a click event listener
+buttonElement.addEventListener('click', () => {
+    if (buttonElement.innerText === 'Subscribe') {
+        buttonElement.innerText = 'Subscribed';
+    } else {
+        buttonElement.innerText = 'Subscribe';
+    }
+});
