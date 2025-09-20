@@ -41,9 +41,19 @@ body{
       
        background: linear-gradient(160deg, #ff7e5f, #feb47b);
        */
-       background: linear-gradient(160deg,lightblue,lightyellow,lightgreen,lightpink,rgb(255, 0, 0),orange);
+       background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad390, #a18cd1);
+       
+       background-size: 400% 400%;
+
+       animation :flow 5s ease infinite;
 }
 
+@keyframes flow {
+  0%{background-position: 50% 0% ;}
+  50%{background-position: 100% 0% ;}
+  100%{background-position: 50% 0% ;}
+  
+}
 button{
     background-color: red; 
     font-weight : bolder;
