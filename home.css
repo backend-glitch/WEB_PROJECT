@@ -188,8 +188,8 @@ nav .nav-links li:hover{
     padding: 100px 20px;
     padding :200px;
 }
-/* Hero */
-#hero h1 {
+/* Home2 */
+#home2 h1 {
     /* font-size: 42px;
     font-weight: 600; */
 
@@ -224,6 +224,7 @@ nav .nav-links li:hover{
     transition: 0.3s;
 
     border-color: cyan;
+
 }
 
 .skill-box:hover {
@@ -349,8 +350,8 @@ nav .nav-links li:hover{
 .iconic button:hover{
     background-color: var(--logo-light);
     color: var(--logo-dark);
-    transform: scale(1.3) rotate(-10deg);
-  box-shadow: 10px 0 black;
+    transform: scale(1.3) rotate3d(1,0,1,-10deg);
+  box-shadow: 10px 10px black;
   cursor: pointer;
     
 }
@@ -365,7 +366,7 @@ nav .nav-links li:hover{
 
 a{
     text-decoration: none;
-    color: none;
+    color: var(--logo-dark);
 }
 
 

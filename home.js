@@ -1,6 +1,6 @@
 // SECTION FILES
 const sectionFiles = {
-    hero: "sections/hero.html",
+    home2: "sections/home2.html",
     skills: "sections/skills.html",
     projects: "sections/projects.html",
     contact: "sections/contact.html"
