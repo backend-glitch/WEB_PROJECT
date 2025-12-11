@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+.sidebar{
+    background-color: lightskyblue;
+    width : 10vw;
+    font-family: cursive;
+   height : 100vh;
+
+   
+
+}
+
+.sidebar nav{
+    padding: 50px;
+
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 15px;
+    padding: 33px 0px;
+
+}
+
+.sidebar nav li:hover{
+    color:white;
+    text-decoration:underline darkblue 2px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.sidebar nav li a{
+text-decoration: none;
+font-size: 18px;
+padding :33px 0;
+color : blue;
+}
+
+
+.main{
+    /* background-color: yellow; */
+    width :90vw;
+
+}
+
+.infocontainer{
+    /* background-color: #9E829C; */
+    height: 60vh;
+    width:80vw;
+
+    border-radius: 15%;
+    margin : 144px auto;
+
+    display: flex;
+    justify-content:space-around ;
+
+}
+.devpic{
+    
+}
+
+.devpic img{
+    width:381px;
+    height:50vh;
+
+    margin-top: 70px;
+    border-radius: 50%;
+    
+    overflow: hidden;
+
+     /* object-fit: cover; */
+     /* object-position: center; */
+    }
+
+.container{
+    display: flex;
+    
+}
+
+.devinfo{
+  
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+}
+
+.hello {
+font-size: 60px;
+font-weight: bolder;
+}
+
+.name{
+    font-size: 50px;
+    font-weight:bold;
+}
+
+.about{
+    margin-top: 8px;
+    font-size: 40px;
+}
+
+.button{
+    margin-top: 34px;
+  
+   
+}
+
+.buttons button{
+color : blue;
+
+  padding : 9px 14px;
+  color : white;
+  background-color: cyan;
+  font-weight: bold;
+  font-size: 21px;
+  margin :5px 3px;
+  box-shadow: black 0 0 6px;
+
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+.buttons button:hover{
+
+transform : scale(1.1);
+color : cyan;
+background-color: white;
+}
+
+.contacts{
+
+    margin-top: 0px;
+    padding : 0 34px;
+    padding-top: 144px;
+
+
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+
+
+
+}
+
+.contacts h1{
+    text-decoration: 2px solid underline;
+    /* text-align: center
+    ; */
+
+    margin-bottom: 50px;
+  
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+   
+}
+
+.contacts .mb-3 {
+
+padding : 30px;
+}
+
+
+input{
+    border : 2px blue solid ;
+    border-radius: 15px;
+}
+
+textarea{
+    border: 2px blue solid ;
+    border-radius: 15px;
+}
+
+#client_email:hover{
+transform: scale(1.1);
+}
+
+#client_phone:hover{
+transform: scale(1.1);
+}
+
+#text-box:hover{
+ 
+transform: scale(1.1);
+}
+
+.submit-btn{
+    border-radius: 15px;
+    color : lightcoral ;
+    background-color: red;
+
+    font-weight: bold;
+    font-size: 30px;
+
+    height: 50px;
+    width : 110px;
+
+    border: none;
+
+    margin-left: 30px;
+}
+
+.submit-btn:hover{
+    transform: scale(1.1);
+
+    color:red;
+    background-color: lightcoral;
+
+    cursor: pointer;
+}
+
+.contacts div{
+    display: flex;
+    flex-direction: column;
+
+    width : 20vw;
+
+    padding :5px;
+    
+}
+
+.contacts input{
+    padding : 8px;
+}
