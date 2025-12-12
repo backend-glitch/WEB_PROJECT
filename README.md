@@ -13,10 +13,13 @@ https://backend-glitch.github.io/WEB_PROJECT/
 
 ## 📌 Features
 
-| section | work |
+| Files | work |
 |---------|------|
-|Page 1| About Me and My work|
-|Page 2| About My Learning Stuff|
+|**index.html**| Main HTML file|
+|**home.css**| Main CSS file |
+|**logo.svg**| logo image file|
+|**section(Folder)**| it contains all other html files|
+|**JS_files(Folder)**|it contains all other js files|
 
 
 ---
@@ -36,7 +39,7 @@ https://backend-glitch.github.io/WEB_PROJECT/
  for collaboration on frontend projects : you can send me a pull request on my REPO 🎯 : https://github.com/backend-glitch/CHIT_AND_CHAT 
 
 ---
-⭐ Show Your Support
+
 
 If you like this project:
 
@@ -45,4 +48,9 @@ If you like this project:
 🍴 Fork it
 
 🧩 Use it as a template
+
+---
+
+# 💛 ARJUN 💜 PORFOLIO 💚 2025 🧡
+
 
