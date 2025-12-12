@@ -7,7 +7,7 @@ This website showcases my skills, projects, and work in a simple and elegant int
 
 ## 🚀 Live Demo  
 🔗 **Hosted on GitHub Pages:**  
-https://backend-glitch.github.io/WEB_PROJECT/
+<a href="https://backend-glitch.github.io/WEB_PROJECT/" target="_blank">https://backend-glitch.github.io/WEB_PROJECT/</a>
 
 ---
 
@@ -52,5 +52,6 @@ If you like this project:
 ---
 
 # 💛 ARJUN 💜 PORFOLIO 💚 2025 🧡
+
 
 
