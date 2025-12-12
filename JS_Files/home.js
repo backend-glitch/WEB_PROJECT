@@ -2,6 +2,7 @@
 const sectionFiles = {
     home2: "sections/home2.html",
     skills: "sections/skills.html",
+    myprojects: "sections/myprojects.html",
     projects: "sections/projects.html",
     contact: "sections/contact.html"
 };
