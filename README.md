@@ -38,10 +38,10 @@ https://backend-glitch.github.io/WEB_PROJECT/
 ---
 
 ## 👨‍💻 Collaborations
- for collaboration on frontend projects : you can send me a pull request on my REPO 🎯 : https://github.com/backend-glitch/CHIT_AND_CHAT 
-
----
-
+ For collaboration on frontend projects : you can send me a pull request on my REPO 🎯 :
+ ```md
+ https://github.com/backend-glitch/CHIT_AND_CHAT
+```
 
 If you like this project:
 
@@ -53,7 +53,13 @@ If you like this project:
 
 ---
 
+## 😁About Me
+<img src="https://gitstar-xcj1.vercel.app/github?user=backend-glitch&emoji=🚀">
+
+---
+
 # 💛 ARJUN 💜 PORFOLIO 💚 2025 🧡
+
 
 
 
