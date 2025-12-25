@@ -235,8 +235,20 @@ nav .nav-links li:hover{
 
     margin-top: 15px;
     font-size: 22px;
-    color: var(--accent);
+    /* color: var(--accent); */
     font-weight: 600;
+/* 
+ color: linear-gradient(90deg, #7f5af0, #38bdf8); */
+/* -webkit-text-fill-color: transparent; */
+
+  /* background: linear-gradient(90deg, #7f5af0, #2cb67d);
+ 
+  -webkit-text-fill-color: transparent; */
+/* 
+  color: #7f5af0; */
+  color: #f97316;
+  
+
 }
 
 
@@ -496,6 +508,8 @@ h2{
   font-weight: normal;
   font-style: normal;
   font-size: 30px;
+
+  
 
 }
 
