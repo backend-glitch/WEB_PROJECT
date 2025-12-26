@@ -127,18 +127,19 @@ nav .logo {
     font-weight: 600; */
     margin-bottom: 50px;  /* spacing below logo */
 
+        border-radius: 0px;
+      box-shadow: 10px 10px var(--logo-light);
   
     padding: 15px;
-    border-radius: 15px;
+    /* border-radius: 15px;*/
 
-       border: 2px solid var(--logo-light);
+       border: 2px solid var(--logo-light); 
 
     transition: 2s ease;
 }
 
 nav .logo:hover{
-      border-radius: 0px;
-      box-shadow: 10px 10px var(--logo-light);
+  box-shadow: var(--accent);
 }
 
 
