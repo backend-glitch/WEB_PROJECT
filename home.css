@@ -131,11 +131,14 @@ nav .logo {
     padding: 15px;
     border-radius: 15px;
 
+       border: 2px solid var(--logo-light);
+
     transition: 2s ease;
 }
 
 nav .logo:hover{
-      border: 2px solid var(--logo-light);
+      border-radius: 0px;
+      box-shadow: 10px 10px var(--logo-light);
 }
 
 
@@ -255,13 +258,21 @@ nav .nav-links li:hover{
 /* Skills Grid */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(120px, 2fr));
     gap: 25px;
     margin-top: 30px;
 }
 
 .skill-box {
-    padding: 20px;
+
+      display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+  padding: 20px 25px;
+
+    /* padding: 20px; */
     text-align: center;
     border: 1px solid #aaa3;
     border-radius: 12px;
@@ -326,12 +337,24 @@ nav .nav-links li:hover{
 
 /* Skills Grid */
 .skills-grid-3 {
-    display: grid;
+
+
+  display: flex;
+  flex-wrap: wrap;
+    grid-column: (120px, 1fr);
+    gap: 25px;
+    margin-top: 10px;
+
+    /* display: flex;
+    flex-direction: column; */
+    /* perspective: 1000px;  only needed if you still use 3D effects  */
+
+    /* display: grid;
    gap:25px;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
  
     margin-top: 30px;
-    perspective: 1000px; /* Needed for 3D flip effect */
+    perspective: 1000px; */
 }
 
 /* Skill Card Container */
@@ -385,6 +408,11 @@ nav .nav-links li:hover{
 .skill-front-3 {
     background-color: transparent;
     color: var(--logo-dark);
+
+        font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Back side */
@@ -393,6 +421,13 @@ nav .nav-links li:hover{
     color: var(--logo-light);
     transform: rotateY(180deg);
     transform: 1s ease;
+
+        font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+
+  opacity: 0.7;
 }
 
 
@@ -512,8 +547,13 @@ h2{
   font-style: normal;
   font-size: 30px;
 
-  
+  opacity: 0.5;
 
+  transition: 1s linear;
+}
+
+.mein:hover{
+    opacity: 0.9;
 }
 
 .coly{
@@ -529,4 +569,90 @@ h1{
 
 h1:hover{
     text-decoration: 2px underline solid var(--accent);
+}
+
+/* // skills - icons */
+.skill-text {
+  flex: 1;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.divider {
+  width: 2px;
+  height: 100%;
+   background:  cyan;
+}
+
+.skill-box i {
+  font-size: 26px;
+}
+
+.skill-box:hover .divider{
+background: red;
+}
+
+.skill-box:hover i {
+  filter: drop-shadow(0 0 8px rgba(124, 58, 237, 0.8))
+          drop-shadow(0 0 16px rgba(124, 58, 237, 0.6));
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+/*  my projects */
+
+.card {
+  position: relative;
+  width: 220px;
+  height: 150px;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.hidden-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+.card:hover .hidden-text {
+  opacity: 0.6;
+  transform: translateY(0);
+}
+
+.skills-grid-3:hover .card {
+    opacity: 0.35;
+}
+
+.skills-grid-3 .card:hover {
+    opacity: 1;
+    transform: scale(1.03);
+    border-radius: 0px;
+}
+
+/* git projects */
+.skills-grid-2:hover .skill-boxer {
+    opacity: 0.35;
+
+}
+
+.skills-grid-2 .skill-boxer:hover {
+    opacity: 1;
+    transform: translateY(15px) scale(1.03);
+    border-radius: 60px;
 }
