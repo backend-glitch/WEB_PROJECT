@@ -26,3 +26,13 @@ async function loadSections() {
 }
 loadSections();
 
+
+// cursor
+
+document.addEventListener("mousemove", e => {
+  const dot = document.querySelector(".cursor-dot");
+  const ring = document.querySelector(".cursor-ring");
+
+  dot.style.left = ring.style.left = e.clientX + "px";
+  dot.style.top  = ring.style.top  = e.clientY + "px";
+});

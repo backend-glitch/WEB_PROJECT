@@ -6,12 +6,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Hegarty&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
+    cursor: none;
 }
 
 /* Light Mode */
@@ -656,4 +660,77 @@ background: red;
     opacity: 1;
     transform: translateY(15px) scale(1.03);
     border-radius: 60px;
+}
+
+
+/* cursor */
+
+/* .cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: #7c3aed;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999; 
+}
+*/
+.cursor-ring {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+
+  border: 4px solid rgba(124, 58, 237, 0.4);
+  background: transparent;
+
+  transform: translate(-50%, -50%);
+
+  /* base glow */
+  box-shadow: 0 0 10px rgba(124, 58, 237, 0.5);
+
+  /* animation */
+  animation: glow 1.6s infinite alternate;
+
+  transition: transform 0.15s ease;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow:
+      0 0 10px rgba(169, 135, 33, 0.5),
+      0 0 20px rgba(169, 135, 33, 0.3);
+  }
+  50% {
+    box-shadow:
+      0 0 14px rgba(49, 173, 140, 0.6),
+      0 0 28px rgba(49, 173, 140, 0.4);
+  }
+  100% {
+    box-shadow:
+      0 0 18px rgba(124, 58, 237, 0.7),
+      0 0 36px rgba(124, 58, 237, 0.5);
+  }
+}
+
+
+
+.big{
+  display: flex;
+
+  text-align: center;
+
+ color:var(--logo-dark);
+
+ opacity: 0.7;
+  margin-top: -20px;
+  margin-left: 230px;
+
+  font-size: 170px;
+
+    font-family: "BBH Hegarty", sans-serif;
+   font-weight: 200; 
+  font-style: normal;
 }
