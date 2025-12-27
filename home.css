@@ -234,6 +234,8 @@ nav .nav-links li:hover{
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
+/* 
+  flex : 1; */
 
 }
 
@@ -554,6 +556,8 @@ h2{
 
   opacity: 0.5;
 
+  flex:7;
+
   transition: 1s linear;
 }
 
@@ -747,3 +751,48 @@ background: red;
    font-weight: 200; 
   font-style: normal;
 }
+
+.secx{
+
+  display: flex;
+  flex-direction: row;
+}
+
+.divi{
+  width:10px;
+  height:500px;
+  background-color: indigo;
+
+  /* padding: 1px; */
+
+
+margin-left: 30px;
+
+border-radius: 20px;
+opacity: 0.5;
+}
+
+.custo{
+  object-fit: cover;
+  width : 50%;
+  height : 50%;
+
+  /* margin-bottom: 300px; */
+  margin-left: 200px;
+  border-radius: 15px;
+  
+  flex:3;
+
+  opacity: 0.8;
+  z-index :-1;
+
+     box-shadow: 30px 60px rgba(0, 0, 0, 0.5);
+  transition: transform 2s ease, ;
+}
+
+img:hover {
+  transform: translateY(-10px) ;
+  box-shadow: 30px 60px rgba(0,0,0,0.9);
+ 
+}
+
