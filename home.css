@@ -37,10 +37,13 @@
        --logo-light:  #ffffff; /* dark logo for light bg */
   --logo-dark:#111111;  /* light logo for dark bg */
 
-  
-
-
 }
+
+::selection{
+  background: orange;
+  color:peachpuff;
+}
+
 
 body {
     background: linear-gradient(135deg, #7f5cff, #20e3b2, #f9dd94);
@@ -679,6 +682,58 @@ background: red;
 
 
 
+.skill-boxer-5 {
+  position: relative;
+  width: 300px;
+  height:250px;
+  padding: 50px;
+  color: black ;
+  border-radius: 16px;
+  background-color:rgba(124, 58, 237, 0.4);
+  /* backdrop-filter: blur(12px);
+  */
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  transition: transform 1s linear;
+
+  overflow: hidden;
+  z-index: 1;
+}
+
+.skill-boxer-5::after{
+  position: absolute;
+  content: "";
+  z-index: -1;
+  inset: 0;
+
+    transform-origin: right;
+  transition: transform 0.35s ease;
+
+
+  background-color: rgba(255, 255, 255, 0.2) ;
+
+}
+
+.skill-boxer-5:hover:after{
+  transform: scaleX(0);
+
+}
+
+.skill-boxer-5:hover{
+  transform: scale(1.1);
+
+}
+
+
+/* .skill-boxer-5:hover{
+  transform: scale(1.1)
+} */
 
 
 
