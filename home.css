@@ -249,6 +249,10 @@ nav .nav-links li:hover{
   display: none;
 }
 
+#logo2{
+  display: none;
+}
+
 @media (max-width:800px)
 {
 #themeToggle2{
@@ -265,8 +269,8 @@ nav .nav-links li:hover{
     color: white;
     font-weight: bold;
 
-    right:10rem;
-    bottom: 2rem;
+    right:1rem;
+    bottom: 1rem;
 
     
     transition: 1s ease;
@@ -282,10 +286,48 @@ nav .nav-links li:hover{
 
   }
 
+
 #themeToggle2:hover{
       background: var(--logo-light);
     color:var(--logo-dark);
 }
+
+#logo2{
+
+  display: flex;
+  position: fixed;
+  z-index: 999;
+
+   background: transparent;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+
+    right:1rem;
+    top: 1rem;
+
+    
+    transition: 1s ease;
+
+    width:3rem;
+    height:3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.6rem;
+
+    font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
+
+
+  }
 
 img{
   display: none;
