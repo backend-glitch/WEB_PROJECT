@@ -24,7 +24,7 @@
   }
 
   .body{
-    background-size: auto;
+    background-size: cover;
   }
 }
 
@@ -285,6 +285,14 @@ nav .nav-links li:hover{
 #themeToggle2:hover{
       background: var(--logo-light);
     color:var(--logo-dark);
+}
+
+img{
+  display: none;
+}
+
+.divi{
+  display: none;
 }
 }
 
