@@ -18,6 +18,12 @@
     cursor: none;
 }
 
+@media (max-width: 800px) {
+  *{
+    cursor: pointer;
+  }
+}
+
 /* Light Mode */
 :root {
     --bg: #f7f7f7;
@@ -124,6 +130,13 @@ nav {
     
 }
 
+@media (max-width : 800px){
+
+  nav{
+    display: none;
+  }
+}
+
 /* Logo inside sidebar */
 nav .logo {
 
@@ -219,6 +232,49 @@ nav .nav-links li:hover{
     width:90px;
 }
 
+#themeToggle2{
+  display: none;
+}
+
+@media (max-width:800px)
+{
+#themeToggle2{
+
+  display: flex;
+  position: fixed;
+  z-index: 999;
+
+   background: var(--accent);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+
+    right:2rem;
+    bottom: 2rem;
+
+    
+    transition: 1s ease;
+
+    width:3rem;
+    height:3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.6rem;
+
+  }
+
+#themeToggle2:hover{
+      background: var(--logo-light);
+    color:var(--logo-dark);
+}
+}
+
 #themeToggle:hover{
 
     transform: scale(1.2);
@@ -233,6 +289,13 @@ nav .nav-links li:hover{
      background: transparent;
     padding: 100px 20px;
     padding :200px;
+}
+
+@media (max-width: 800px) {
+  .section{
+    padding:20px 2px;
+  }
+  
 }
 /* Home2 */
 #home2 h1 {
@@ -270,6 +333,13 @@ nav .nav-links li:hover{
 
 }
 
+@media  (max-width:800px){
+  
+  .typing{
+    min-height: 6rem;
+  }
+}
+
 
 /* Skills Grid */
 .skills-grid {
@@ -277,6 +347,13 @@ nav .nav-links li:hover{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
     margin-top: 30px;
+}
+
+@media (max-width: 800px) {
+  .skills-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+  
 }
 
 .skill-box {
@@ -361,6 +438,13 @@ nav .nav-links li:hover{
   gap: 40px;
 }
 
+@media (max-width: 800px){
+
+  .skills-grid-2{
+    grid-template-columns:  1fr ;
+  }
+}
+
 .skill-boxer {
     /* padding: 30px;
     text-align: center;
@@ -434,6 +518,8 @@ nav .nav-links li:hover{
     margin-top: 30px;
     perspective: 1000px; */
 }
+
+
 
 /* Skill Card Container */
 .skill-box-3 {
@@ -585,6 +671,7 @@ nav .nav-links li:hover{
 
 }
 
+
 .iconic button:hover{
     background-color: var(--logo-light);
     color: var(--logo-dark);
@@ -603,6 +690,20 @@ nav .nav-links li:hover{
     justify-content:space-around;
 }
 
+
+@media (max-width: 800px) {
+  .iconic  {
+display: grid;
+
+grid-template-columns: 1fr 1fr;
+
+}
+
+.temp{
+  display: none;
+}
+  
+}
 
 a{
     text-decoration: none;
@@ -810,6 +911,39 @@ background: red;
     border-radius: 0px;
 }
 
+
+@media (max-width:800px){
+  .skills-grid-3{
+    grid-template-columns: 1fr ;
+    margin-top: 0px;
+
+  }
+
+.card:nth-child(1),
+.card:nth-child(4){
+  grid-column: 1;
+  margin-top: 70px;
+}
+
+
+.card:nth-child(2),
+.card:nth-child(5){
+  grid-column: 1;
+   margin-top: 70px;
+
+ 
+}
+
+.card:nth-child(3),
+.card:nth-child(6){
+  grid-column: 1;
+   margin-top: 70px;
+
+}
+
+  
+}
+
 /* git projects */
 .skills-grid-2:hover .skill-boxer {
     opacity: 0.35;
@@ -857,6 +991,12 @@ background: red;
   transition: transform 0.15s ease;
 }
 
+@media(max-width: 800px){
+  .cursor-ring{
+    display: none;
+  }
+}
+
 @keyframes glow {
   0% {
     box-shadow:
@@ -893,6 +1033,14 @@ background: red;
     font-family: "BBH Hegarty", sans-serif;
    font-weight: 200; 
   font-style: normal;
+}
+
+@media (max-width:800px) {
+  .big{
+    font-size: 5rem;
+
+    margin-left:2rem;
+  }
 }
 
 .secx{
