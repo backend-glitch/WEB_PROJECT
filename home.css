@@ -22,6 +22,10 @@
   *{
     cursor: pointer;
   }
+
+  .body{
+    background-size: auto;
+  }
 }
 
 /* Light Mode */
@@ -50,16 +54,25 @@
   color:peachpuff;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+
 
 body {
     background: linear-gradient(135deg, #7f5cff, #20e3b2, #f9dd94);
     background-size: 300% 300%;
     animation: gradientMove 12s ease infinite;
     overflow-x: hidden;
-    /* overflow-y: ; */
 
+    min-height: 100vh;     
+    /* overflow-y: ; */
+/* 
     margin :0;
-    padding: 0;
+    padding: 0; */
 
     /* min-height: 200px; */
 }
