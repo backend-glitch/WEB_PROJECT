@@ -61,10 +61,14 @@ window.addEventListener("scroll", () => {
 
 
 //gyro
-window.addEventListener("deviceorientation", e => {
-  const x = e.gamma / 5;
-  const y = e.beta / 5;
-  el.style.transform = `translate(${x}px, ${y}px)`;
-});
 
+const layer = document.querySelector(".layer");
+
+window.addEventListener("deviceorientation", e => {
+
+  const x = e.gamma * 0.3; 
+  const y = e.beta * 0.3;  
+
+  layer.style.transform = `translate(${x}px, ${y}px)`;
+});
 
