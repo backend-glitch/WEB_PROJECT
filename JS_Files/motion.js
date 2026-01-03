@@ -62,25 +62,25 @@ window.addEventListener("scroll", () => {
 
 //gyro
 
-const layer = document.querySelector(".layer");
-let x = 0, y = 0;
-let targetX = 0, targetY = 0;
+// const layer = document.querySelector(".layer");
+// let x = 0, y = 0;
+// let targetX = 0, targetY = 0;
 
-window.addEventListener("deviceorientation", e => {
-  targetX = e.gamma * 0.2;
-  targetY = e.beta * 0.2;
-});
+// window.addEventListener("deviceorientation", e => {
+//   targetX = e.gamma * 0.2;
+//   targetY = e.beta * 0.2;
+// });
 
-function animate() {
-  // Smoothly interpolate current position towards target
-  x += (targetX - x) * 0.1;
-  y += (targetY - y) * 0.1;
+// function animate() {
+//   // Smoothly interpolate current position towards target
+//   x += (targetX - x) * 0.1;
+//   y += (targetY - y) * 0.1;
 
-  layer.style.transform = `translate3d(${x}px, ${y}px, 0)`;
-  requestAnimationFrame(animate);
-}
+//   layer.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+//   requestAnimationFrame(animate);
+// }
 
-animate();
+// animate();
 
 // const layer = document.querySelector(".layer");
 
