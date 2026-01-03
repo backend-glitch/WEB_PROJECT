@@ -35,6 +35,14 @@ window.addEventListener("mousemove", e => {
 });
 
 
+// no parallex for mobile
+if (window.innerWidth < 768) {
+  document.querySelectorAll(".parallax-layer").forEach(el => {
+    el.classList.remove("parallax-layer");
+  });
+}
+
+
 
 
 //navbar
@@ -49,3 +57,14 @@ window.addEventListener("scroll", () => {
     nav.classList.remove("scrolled");
   }, 500);
 });
+
+
+
+//gyro
+window.addEventListener("deviceorientation", e => {
+  const x = e.gamma / 5;
+  const y = e.beta / 5;
+  el.style.transform = `translate(${x}px, ${y}px)`;
+});
+
+
